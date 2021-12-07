@@ -1,2 +1,12 @@
 __pycache__
 venv
+CLEVR_train_scenes.json
+CLEVR_val_questions.json
+CLEVR_val_scenes.json
+train_questions_none.en
+train_questions_none.graph
+val_questions_ext.en
+val_questions_ext.graph
+val_questions_none.en
+val_questions_none.graph
+trash

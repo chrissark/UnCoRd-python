@@ -1,0 +1,17 @@
+    with open('./val_questions_none.graph') as f:
+        graph_txt = f.read()
+
+    with open('./val_questions_none.en') as f:
+        questions = f.read()
+
+    graph_text_list = graph_txt.split('\n')
+    questions_list = questions.split('\n')
+    n = 94
+    question = questions_list[n]
+    graph_txt = graph_text_list[n]
+    # print(model._build_graph(graph_txt))
+    print(model.get_answer('CLEVR_val_000009.png', graph_txt))
+    objects = model._detect_objects('CLEVR_val_000009.png')
+    for obj in objects:
+        print(obj)
+    print(question)
